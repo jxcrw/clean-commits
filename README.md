@@ -14,12 +14,13 @@ can be provided here.
 Refs: #123
 ```
 
+
 | Component      | Description                                      |
 |:---------------|:-------------------------------------------------|
 | `+`            | The type of commit (see below).                  |
-| `sys.subsys`   | Context for the commit, in common dot notation.  |
+| `sys.subsys`   | Context for commit, in dot notation.  |
 | `Provide...`   | Good ol' imperative summary of commit.           |
-| `Sometimes...` | Additional details/description (optional).       |
+| `Sometimes...` | Additional details/description (when necessary).       |
 | `Refs:`        | Callout for PRs/issue numbers (when applicable). |
 
 
@@ -27,31 +28,27 @@ Refs: #123
 - Write in dot notation: `sys.subsys`
 - Concatenate with pipe (`|`) : `sys1|sys2`
     * Or split into two separate commits (usually preferable).
-- If commit affects more than ≈2 subsystems, use keyword `all` for the context.
+- If commit affects more than ≈2 subsystems, use keyword `all` as the context.
 
 
 ## Types
 
-| Type     | Symbol | Mnemonic                                                                             |
-|:---------|:------:|:-------------------------------------------------------------------------------------|
-| Fix      | ~      | A change (fix). Includes bugfixes.                                                   |
-| Feat     | +      | Something new and shiny. Shiny new "features".                                       |
-| Chore    | -      | Something boring, repetitive, and easy to ignore. But necessary.                     |
-| Style    | *      | A purely cosmetic fix. Like when correcting spelling/grammar in texts/chats.         |
-| Refac    | =      | Things ultimately work the same (equally) before and after.                          |
-| Perf     | $      | Money. (Run)time is money.                                                           |
-| Tests    | %      | Being within some quantifiable metric of some explicit target.                       |
-| Revert   | @      | "At". Go back to some previous place/location.                                       |
-| Build/CI | #      | "Press the pound key" to build/distribute the software.                              |
-| Blank    | _      | Blank. Unsure of type. It may become clear naturally, after a few more commits.      |
-| Docs     | ?      | But who/what/where/when/why/how? ___Never used alone - use to prefix other types.___ |
-| Break    | !      | Be careful! ___Never used alone - use to prefix other types.___                      |
+| Type     | Symbol | Mnemonic                                                                        |
+|:---------|:------:|:--------------------------------------------------------------------------------|
+| Fix      | ~      | A change (fix). Includes bugfixes.                                              |
+| Feat     | +      | Something new and shiny. Shiny new "features".                                  |
+| Chore    | -      | Something boring, repetitive, and easy to ignore. But necessary.                |
+| Style    | *      | A purely cosmetic fix. Like when correcting spelling/grammar in texts/chats.    |
+| Refac    | =      | Things ultimately work the same (equally) before and after.                     |
+| Perf     | $      | Money. (Run)time is money.                                                      |
+| Tests    | %      | Being within some quantifiable metric of some explicit target.                  |
+| Revert   | @      | "At". Go back to some previous place/location.                                  |
+| Build/CI | #      | "Press the pound key" to build/distribute the software.                         |
+| Docs     | ?      | But who/what/where/when/why/how? That's what docs are for.                      |
+| Break    | !      | Be careful! ___Never used alone - use to prefix other types.___                 |
+| Blank    | _      | Blank. Unsure of type. It may become clear naturally, after a few more commits. |
 
-Unassigned: `&^/\|,;"'()[]<>`
-
-
-## A Word on Usage
-Just use [standard commit messages](https://cbea.ms/git-commit/) until the project gets big enough that a more involved convention adds value.
+Unassigned: `&^/\,;"'()[]<>`
 
 
 ## Examples
