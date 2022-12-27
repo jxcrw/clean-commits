@@ -18,6 +18,14 @@ Refs: #123
 | `Sometimes...` | Additional details/description (optional).       |
 | `Refs:`        | Callout for PRs/issue numbers (when applicable). |
 
+
+## Contexts
+- Write in dot notation: `sys.subsys`
+- Concatenate with pipe (`|`) : `sys1|sys2`
+    * Or split into two separate commits (usually preferable).
+- If commit affects more than ≈2 subsystems, use keyword `all` for the context.
+
+
 ## Types
 
 | Type     | Symbol | Mnemonic                                                                             |
@@ -55,6 +63,7 @@ Just use [standard commit messages](https://cbea.ms/git-commit/) until the proje
 - `@htop: Add config`
 - `#all: Finish adding files after PII scrub`
 - `!+nvim.keys: Add git rebase binding`
+- `~mouse|keys: Update bindings per nvim changes`
 
 ## Dokugaku
 - `+dsa.cdp: Finish lesson 7`
