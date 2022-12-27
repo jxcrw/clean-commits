@@ -1,4 +1,8 @@
 # Clean Commits
+A convention for cleaner, more expressive commit messages.
+
+## Foreword
+Just use [standard commit messages](https://cbea.ms/git-commit/) until the project gets big enough that a more involved convention adds value.
 
 ## Format
 ```
