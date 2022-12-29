@@ -38,14 +38,14 @@ Refs: #123
 | Fix      | ~      | A change (fix). Includes bugfixes.                                              |
 | Feat     | +      | Something new and shiny. Shiny new "features".                                  |
 | Chore    | -      | Something boring, repetitive, and easy to ignore. But necessary.                |
-| Style    | *      | A purely cosmetic fix. Like when correcting spelling/grammar in texts/chats.    |
+| Style    | *      | A purely cosmetic fix. Like when correcting typos in texts/chats.               |
 | Refac    | =      | Things ultimately work the same (equally) before and after.                     |
 | Perf     | $      | Money. (Run)time is money.                                                      |
 | Tests    | %      | Being within some quantifiable metric of some explicit target.                  |
-| Revert   | @      | "At". Go back to some previous place/location.                                  |
+| Revert   | @      | "At". Going back to some previous place/location.                               |
 | Build/CI | #      | "Press the pound key" to build/distribute the software.                         |
-| Docs     | ?      | But who/what/where/when/why/how? That's what docs are for.                      |
-| Break    | !      | Be careful! ___Never used alone - use to prefix other types.___                 |
+| Docs     | ?      | But who/what/where/when/why/how? Never used alone - put after context.          |
+| Break    | !      | Be careful, breaking change! Never used alone - put after context.              |
 | Blank    | _      | Blank. Unsure of type. It may become clear naturally, after a few more commits. |
 
 Unassigned: `&^/\,;"'()[]<>`
