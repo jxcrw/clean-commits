@@ -44,7 +44,7 @@ Refs: #123
 | Tests    | %      | Being within some quantifiable metric of some explicit target.                  |
 | Revert   | @      | "At". Going back to some previous place/location.                               |
 | Build/CI | #      | "Press the pound key" to build/distribute the software.                         |
-| Docs     | ?      | But who/what/where/when/why/how? Never used alone - put after context.          |
+| Hack     | ?      | A questionable commit pushed only to get something working temporarily.         |
 | Break    | !      | Be careful, breaking change! Never used alone - put after context.              |
 | Blank    | _      | Blank. Unsure of type. It may become clear naturally, after a few more commits. |
 
